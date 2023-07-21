@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<style>
+    .sample-slider{
+        width:70%;
+    }
+    .sample-slider img{
+        width: 100%;
+    }
+    .sample-slider .swiper-wrapper{
+    transition-timing-function: linear;
+}
+</style>
+
+<div class="swiper sample-slider">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://nxgtech.nxgtech.io/wp-content/uploads/2023/06/Frame-1000002899.svg"></div>
+        <div class="swiper-slide"><img src="https://nxgtech.nxgtech.io/wp-content/uploads/2023/06/Frame-1000002899.svg"></div>
+        <div class="swiper-slide"><img src="https://nxgtech.nxgtech.io/wp-content/uploads/2023/06/Frame-1000002899.svg"></div>
+        <div class="swiper-slide"><img src="https://nxgtech.nxgtech.io/wp-content/uploads/2023/06/Frame-1000002899.svg"></div>
+        <div class="swiper-slide"><img src="https://nxgtech.nxgtech.io/wp-content/uploads/2023/06/Frame-1000002899.svg"></div>
+        <div class="swiper-slide"><img src="https://nxgtech.nxgtech.io/wp-content/uploads/2023/06/Frame-1000002899.svg"></div>
+    </div>
+</div>
+
+<script>
+    const swiper = new Swiper('.sample-slider', {
+    loop: true,
+    autoplay: {
+        delay: 1,
+    },
+    speed: 3000,          //add
+    slidesPerView: 3,     //add
+})
+</script>
